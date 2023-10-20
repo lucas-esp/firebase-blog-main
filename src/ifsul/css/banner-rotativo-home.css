@@ -1,0 +1,15 @@
+.banner-carousel .faixa { display: none; }
+.banner-carousel .carousel-indicators-custom { position: absolute; top: 0; right: 4px; display: block; }
+.banner-carousel .carousel-indicators-custom li { float: none; margin: 0!important; width: 41px; height: 37px; }
+.banner-carousel .carousel-indicators-custom li a { display: block; width: 41px; height: 37px; margin: 1px 0; background: #d6d6d6; text-indent: 0; text-align: center; color: #666; font-size: 18px; line-height: 37px; }
+.banner-carousel .carousel-indicators-custom li.active a,
+.banner-carousel .carousel-indicators-custom li a:hover { background: #136328; background: radial-gradient(ellipse at center center,#19882c 1%,#025310 100%); color: #fff; margin: 0; }
+.banner-carousel .carousel-indicators-custom li.last,
+.banner-carousel .carousel-indicators-custom li.last a {  }
+.banner-carousel .carousel-inner { width: 703px; }
+.banner-carousel .fading .carousel-inner > .item { display: block; position: absolute; left: 0 !important; opacity: 0; -moz-transition: .6s ease-in-out opacity; -webkit-transition: .6s ease-in-out opacity; -o-transition: .6s ease-in-out opacity; transition: .6s ease-in-out opacity }
+.banner-carousel .fading .carousel-inner > .active,
+.banner-carousel .fading .carousel-inner > .next.left { opacity: 1 }
+.banner-carousel .fading .carousel-inner > .next,
+.banner-carousel .fading .carousel-inner > .active.left { opacity: 0 }
+.banner-carousel .item { -webkit-transition-property: opacity; -moz-transition-property: opacity; -o-transition-property: opacity; transition-property: opacity }
