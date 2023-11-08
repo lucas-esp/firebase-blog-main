@@ -129,7 +129,7 @@ const AddEditBlog = ({ user, setActive }) => {
     <div className="container-fluid mb-4">
       <div className="container">
         <div className="col-12">
-          <div className="text-center heading py-2">{id ? 'Update Blog' : 'Create Blog'}</div>
+          <div className="text-center heading py-2">{id ? 'Update Blog' : 'Criar Post'}</div>
         </div>
         <div className="row h-100 justify-content-center align-items-center">
           <div className="col-10 col-md-8 col-lg-6">
