@@ -33,18 +33,18 @@ const Auth = ({ setActive, setUser, handleLogout, userId }) => {
         setUser(user);
         setActive('home');
       } else {
-        return toast.error('All fields are mandatory to fill');
+        return toast.error('Todos os campos devem ser preenchidos');
       }
     } else {
       if (password !== confirmPassword) {
-        return toast.error("Password don't match");
+        return toast.error("Senhas não coincidem");
       }
       if (firstName && lastName && email && password) {
         const { user } = await createUserWithEmailAndPassword(auth, email, password);
         await updateProfile(user, { displayName: `${firstName} ${lastName}` });
         setActive('home');
       } else {
-        return toast.error('All fields are mandatory to fill');
+        return toast.error('Todos os campos devem ser preenchidos');
       }
     }
     navigate('/');
@@ -65,7 +65,7 @@ const Auth = ({ setActive, setUser, handleLogout, userId }) => {
                     <input type="text" className="form-control input-text-box" placeholder="Nome" name="firstName" value={firstName} onChange={handleChange} />
                   </div>
                   <div className="col-6 py-3">
-                    <input type="text" className="form-control input-text-box" placeholder="Last Name" name="lastName" value={lastName} onChange={handleChange} />
+                    <input type="text" className="form-control input-text-box" placeholder="Sobrenome" name="lastName" value={lastName} onChange={handleChange} />
                   </div>
                 </>
               )}
@@ -73,11 +73,11 @@ const Auth = ({ setActive, setUser, handleLogout, userId }) => {
                 <input type="email" className="form-control input-text-box" placeholder="Email" name="email" value={email} onChange={handleChange} />
               </div>
               <div className="col-12 py-3">
-                <input type="password" className="form-control input-text-box" placeholder="Password" name="password" value={password} onChange={handleChange} />
+                <input type="password" className="form-control input-text-box" placeholder="Senha" name="password" value={password} onChange={handleChange} />
               </div>
               {signUp && (
                 <div className="col-12 py-3">
-                  <input type="password" className="form-control input-text-box" placeholder="Confirm Password" name="confirmPassword" value={confirmPassword} onChange={handleChange} />
+                  <input type="password" className="form-control input-text-box" placeholder="Confirme a senha" name="confirmPassword" value={confirmPassword} onChange={handleChange} />
                 </div>
               )}
 
@@ -95,12 +95,12 @@ const Auth = ({ setActive, setUser, handleLogout, userId }) => {
                       <p className="small fw-bold mt-2 pt-1 mb-0">
                         Não possui uma conta ?&nbsp;
                         <span className="link-danger" style={{ textDecoration: 'none', cursor: 'pointer' }} onClick={() => setSignUp(true)}>
-                          Sign Up
+                          Cadastre-se
                         </span>
                       </p>
                       {userId && (
                         <button onClick={handleLogout} style={{ marginBlock: '4px' }}>
-                          Logout
+                          Sair
                         </button>
                       )}
                     </div>
@@ -110,7 +110,7 @@ const Auth = ({ setActive, setUser, handleLogout, userId }) => {
                 <>
                   <div className="text-center justify-content-center mt-2 pt-2">
                     <p className="small fw-bold mt-2 pt-1 mb-0">
-                      Already have an account ?&nbsp;
+                      Já tem uma conta ?&nbsp;
                       <span
                         style={{
                           textDecoration: 'none',
@@ -119,7 +119,7 @@ const Auth = ({ setActive, setUser, handleLogout, userId }) => {
                         }}
                         onClick={() => setSignUp(false)}
                       >
-                        Sign In
+                        Entrar
                       </span>
                     </p>
                   </div>
