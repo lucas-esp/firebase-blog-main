@@ -62,7 +62,7 @@ const Auth = ({ setActive, setUser, handleLogout, userId }) => {
               {signUp && (
                 <>
                   <div className="col-6 py-3">
-                    <input type="text" className="form-control input-text-box" placeholder="First Name" name="firstName" value={firstName} onChange={handleChange} />
+                    <input type="text" className="form-control input-text-box" placeholder="Nome" name="firstName" value={firstName} onChange={handleChange} />
                   </div>
                   <div className="col-6 py-3">
                     <input type="text" className="form-control input-text-box" placeholder="Last Name" name="lastName" value={lastName} onChange={handleChange} />
