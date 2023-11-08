@@ -83,7 +83,7 @@ const Auth = ({ setActive, setUser, handleLogout, userId }) => {
 
               <div className="col-12 py-3 text-center">
                 <button className={`btn ${!signUp ? 'btn-sign-in' : 'btn-sign-up'}`} type="submit">
-                  {!signUp ? 'Entrar' : 'Sign-up'}
+                  {!signUp ? 'Entrar' : 'Cadastrar'}
                 </button>
               </div>
             </form>
