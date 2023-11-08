@@ -56,7 +56,7 @@ const AddEditBlog = ({ user, setActive }) => {
         },
         () => {
           getDownloadURL(uploadTask.snapshot.ref).then((downloadUrl) => {
-            toast.info('Image upload to firebase successfully');
+            toast.info('Imagem subiu ao firebase');
             setForm((prev) => ({ ...prev, imgUrl: downloadUrl }));
           });
         }
