@@ -101,7 +101,7 @@ const AddEditBlog = ({ user, setActive }) => {
             trending: false,
             created_at: new Date(),
           });
-          toast.success('Blog created successfully');
+          toast.success('Post criado com sucesso!');
         } catch (err) {
           console.log(err);
         }
@@ -113,13 +113,13 @@ const AddEditBlog = ({ user, setActive }) => {
             author: user.displayName,
             userId: user.uid,
           });
-          toast.success('Blog updated successfully');
+          toast.success('Post atualizado com sucesso');
         } catch (err) {
           console.log(err);
         }
       }
     } else {
-      return toast.error('All fields are mandatory to fill');
+      return toast.error('Todos os campos devem ser preenchidos');
     }
 
     navigate('/');
