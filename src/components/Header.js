@@ -131,7 +131,7 @@ export const Header = () => {
                   <span className="portal-description"></span>
                 </a>
               </div>
-        /*<div className="span4">
+{/*<div className="span4">
              <div id="portal-searchbox" className="row">
                   <h2 className="hidden">Buscar no portal</h2>
                   <form action="/" method="post" className="pull-right">
@@ -153,7 +153,7 @@ export const Header = () => {
                       <input type="hidden" name="Itemid" value="101" />
                     </fieldset>
                   </form>
-                </div>*/
+                </div>*/}
                 <div id="social-icons" className="row">
                   <h2 className="hidden">Redes Sociais</h2>
                   <ul className="pull-right">
