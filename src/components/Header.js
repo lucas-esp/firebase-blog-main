@@ -114,14 +114,6 @@ export const Header = () => {
                 <div className="gtranslate_wrapper" id="gt-wrapper-296"></div>
                 <h2 className="hide">Opções de acessibilidade</h2>
                 <ul className="pull-right" id="portal-siteactions">
-                  <li className="item-140">
-                    <a href="/acessibilidade">Acessibilidade</a>
-                  </li>
-                  <li className="item-141 toggle-contraste">
-                    <a className="toggle-contraste" href="#">
-                      Alto contraste
-                    </a>
-                  </li>
                   <li className="item-142">
                     <a href="/create">Criar post</a>
                   </li>
