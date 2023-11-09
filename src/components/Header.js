@@ -146,7 +146,7 @@ export const Header = () => {
                         <button type="submit" className="btn searchButton">
                           <span className="hide">Buscar</span>
                           <i className="icon-search"></i>
-                        </button /*>
+                        </button */>
                       </div>
                       <input type="hidden" name="task" value="search" />
                       <input type="hidden" name="option" value="com_search" />
