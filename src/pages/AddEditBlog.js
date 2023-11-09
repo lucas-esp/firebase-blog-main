@@ -171,7 +171,7 @@ const AddEditBlog = ({ user, setActive }) => {
               </div>
               <div className="col-12 py-3 text-center">
                 <button className="btn btn-add" type="submit" disabled={progress !== null && progress < 100 && !form?.imgUrl}>
-                  {id ? 'Update' : 'Submit'}
+                  {id ? 'Update' : 'Enviar'}
                 </button>
               </div>
             </form>
