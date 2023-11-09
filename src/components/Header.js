@@ -131,17 +131,17 @@ export const Header = () => {
                   <span className="portal-description"></span>
                 </a>
               </div>
-              <div className="span4">
-                <div id="portal-searchbox" className="row">
-                  <h2 className="hidden">Buscar no portal</h2>
+        //<div className="span4">
+                //<div id="portal-searchbox" className="row">
+                  //<h2 className="hidden">Buscar no portal</h2>
                   <form action="/" method="post" className="pull-right">
                     <fieldset>
-                      <legend className="hide">Busca</legend>
-                      <h2 className="hidden">Buscar no portal</h2>
-                      <div className="input-append">
-                        <label htmlFor="portal-searchbox-field" className="hide">
-                          Busca:{' '}
-                        </label>
+                      //<legend className="hide">Busca</legend>
+                      //<h2 className="hidden">Buscar no portal</h2>
+                      //<div className="input-append">
+                        //<label htmlFor="portal-searchbox-field" className="hide">
+                         // Busca:{' '}
+                       // </label>
                         //<input type="text" id="portal-searchbox-field" className="searchField" placeholder="Buscar no portal" title="Buscar no portal" name="searchword" />
                         //<button type="submit" className="btn searchButton">
                           //<span className="hide">Buscar</span>
