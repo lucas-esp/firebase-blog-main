@@ -142,10 +142,10 @@ export const Header = () => {
                         <label htmlFor="portal-searchbox-field" className="hide">
                           Busca:{' '}
                         </label>
-                        <input type="text" id="portal-searchbox-field" className="searchField" placeholder="Buscar no portal" title="Buscar no portal" name="searchword" />
-                        <button type="submit" className="btn searchButton">
-                          <span className="hide">Buscar</span>
-                          <i className="icon-search"></i>
+                        //<input type="text" id="portal-searchbox-field" className="searchField" placeholder="Buscar no portal" title="Buscar no portal" name="searchword" />
+                        //<button type="submit" className="btn searchButton">
+                          //<span className="hide">Buscar</span>
+                          //<i className="icon-search"></i>
                         </button>
                       </div>
                       <input type="hidden" name="task" value="search" />
